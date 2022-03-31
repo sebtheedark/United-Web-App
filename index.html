@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>United</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="left">
+        <h1 id="name">
+          Welcome
+          <br />
+          *insert name*
+        </h1>
+      </div>
+      <div class="center" id="logo">
+        <img src="/pics/logo.png" />
+      </div>
+      <!-- Adding New Car -->
+      <div class="right">
+        <button class="addCar" id="addCar">Add a new car</button>
+      </div>
+    </div>
+    <!-- Modal Form -->
+    <div class="modalDisplay" id="modalDisplay">
+      <div class="modal" id="modal">
+        <div class="modalContent">
+          <h2 id="modalHeader">
+            Add Car Info:
+            <span class="closeModal" id="closeModal">&times;</span>
+          </h2>
+          <div class="form">
+            <form>
+              <label for="make">Make:</label><br />
+              <input type="text" id="make" name="make" /><br />
+              <label for="model">Model:</label><br />
+              <input type="text" id="model" name="model" /><br />
+              <label for="year">Color:</label><br />
+              <input type="text" id="color" name="color" /><br />
+              <label for="year">Year:</label><br />
+              <input type="text" id="year" name="year" /><br />
+              <label for="plates">License:</label><br />
+              <input type="text" id="plates" name="plates" /><br />
+              <label for="vin">Last 4 of VIN</label><br />
+              <input type="text" id="vin" name="vin" /><br />
+              <label for="date">Date Stored</label><br />
+              <input type="date" id="date" name="date" /><br /><br />
+              <input
+                type="button"
+                value="Add New Car"
+                id="button"
+                onclick="addingNewCar()"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row Header -->
+    <div class="rowHeader">
+      <div class="make">MAKE</div>
+      <div class="make">MODEL</div>
+      <div class="make">YEAR</div>
+      <div class="make">LICENSE</div>
+      <div class="make">VIN</div>
+      <div class="make">DATE STORED</div>
+      <div class="make">TOTAL</div>
+    </div>
+
+    <!-- Tables to store input data  -->
+    <div class="table">
+      <table id="carTable">
+        <tbody></tbody>
+        <tr>
+          <td>VW</td>
+          <td>GTI</td>
+          <td>2010</td>
+          <td>6MON305</td>
+          <td>0000</td>
+          <td>TEST</td>
+          <td>$246.60</td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
