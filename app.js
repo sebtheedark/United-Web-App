@@ -93,4 +93,3 @@ function submitForm(e) {
 // displayCars(); 
 
 console.log(carStorage)
-
