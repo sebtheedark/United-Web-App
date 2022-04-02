@@ -18,29 +18,31 @@
         </h1>
       </div>
       <div class="center" id="logo">
-        <img src="/pics/logo.png" />
+        <img src="pics/logo.png" />
       </div>
       <!-- Adding New Car -->
       <div class="right">
-        <button class="addCar" id="addCar" onclick="openForm()">Add a new car</button>
+        <button class="addCar" id="addCar" onclick="openForm()">
+          Add a new car
+        </button>
       </div>
     </div>
     <!-- Modal Form -->
     <div class="modalDisplay" id="modalDisplay">
       <div class="modal" id="modal">
         <div class="modalContent">
-          <h2 id="modalHeader">
-            Add Car Info:
-          </h2>
+          <h2 id="modalHeader">Add Car Info:</h2>
           <div class="form">
             <form id="addCar">
-                <span class="closeModal" id="closeModal" onclick="closeForm()">&times;</span>
+              <span class="closeModal" id="closeModal" onclick="closeForm()"
+                >&times;</span
+              >
 
               <label for="make">Make:</label><br />
               <input type="text" id="make" name="make" /><br />
               <label for="model">Model:</label><br />
               <input type="text" id="model" name="model" /><br />
-              
+
               <!--- For Color 
               <label for="year">Color:</label><br />
               <input type="text" id="color" name="color" /><br />
@@ -92,6 +94,6 @@
       </table>
     </div>
 
-    <script src='app.js'></script>
+    <script src="app.js"></script>
   </body>
 </html>
