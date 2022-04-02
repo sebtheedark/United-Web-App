@@ -22,7 +22,7 @@
       </div>
       <!-- Adding New Car -->
       <div class="right">
-        <button class="addCar" id="addCar">Add a new car</button>
+        <button class="addCar" id="addCar" onclick="openForm()">Add a new car</button>
       </div>
     </div>
     <!-- Modal Form -->
@@ -31,7 +31,7 @@
         <div class="modalContent">
           <h2 id="modalHeader">
             Add Car Info:
-            <span class="closeModal" id="closeModal">&times;</span>
+            <span class="closeModal" id="closeModal" onclick="closeForm()">&times;</span>
           </h2>
           <div class="form">
             <form>
@@ -53,7 +53,7 @@
                 type="button"
                 value="Add New Car"
                 id="button"
-                onclick="addingNewCar()"
+                onclick="submitForm()"
               />
             </form>
           </div>
