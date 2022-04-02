@@ -31,16 +31,20 @@
         <div class="modalContent">
           <h2 id="modalHeader">
             Add Car Info:
-            <span class="closeModal" id="closeModal" onclick="closeForm()">&times;</span>
           </h2>
           <div class="form">
-            <form>
+            <form id="addCar">
+                <span class="closeModal" id="closeModal" onclick="closeForm()">&times;</span>
+
               <label for="make">Make:</label><br />
               <input type="text" id="make" name="make" /><br />
               <label for="model">Model:</label><br />
               <input type="text" id="model" name="model" /><br />
+              
+              <!--- For Color 
               <label for="year">Color:</label><br />
               <input type="text" id="color" name="color" /><br />
+              -->
               <label for="year">Year:</label><br />
               <input type="text" id="year" name="year" /><br />
               <label for="plates">License:</label><br />
