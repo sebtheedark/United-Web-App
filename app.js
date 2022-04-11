@@ -88,8 +88,13 @@ function submitForm(e) {
     console.log('submitted')
 }
 
-// let myCar = new Car("Honda", 'Civic', '2022', '6MON306');
-// carStorage.push(myCar); 
-// displayCars(); 
+// Function to Calculate Fees
+function fees () {
+
+}
+
+let myCar = new Car("Honda", 'Civic', '2022', 'TEST', 'TEST', 'TEST');
+carStorage.push(myCar); 
+displayCars(); 
 
 console.log(carStorage)

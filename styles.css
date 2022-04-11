@@ -37,9 +37,16 @@ body{
     font-size: 16px;
     font-weight: bold;
     box-shadow: 5px 10px;
+    background-color: #F8F9FA;
 }
 
 /* Modal Build Here*/
+#modalHeader{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 .modalDisplay{
     display: none;
     position: fixed;
@@ -60,13 +67,20 @@ body{
     width: 25%;
 }
 .modalContent{
-    border: 2px solid;
-    padding: 50px;
-    background-color: lightgray;
+    border: 1px solid;
+    border-radius: 10px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #E9ECEF;
 }
 .closeModal{
+    justify-content: right;
     color: red;
     float: right;
+    padding-right: 20px;
+    padding-top: 20px;
     font-size: 30px;
     font-weight: bold;
 }
@@ -89,8 +103,8 @@ body{
     border: 2px solid;
     border-top: 3px solid;
     border-bottom: 3px solid;
-    font-weight: bold;
     font-size: 22px;
+    font-weight: bold;
 }
 input[type=button]{
     padding: 12px; 
